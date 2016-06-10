@@ -8,6 +8,8 @@ function counter(state, action) {
       return state + 1;
     case 'DECREMENT':
       return state - 1;
+    case 'RESET':
+      return 0;
     default:
       return state;
   }
@@ -19,4 +21,6 @@ store.dispatch({ type: 'INCREMENT' });
 store.dispatch({ type: 'INCREMENT' });
 store.dispatch({ type: 'DECREMENT' });
 store.dispatch({ type: 'INCREMENT' });
+store.dispatch({ type: 'RESET' });
+
 console.log('Current store', store.getState());
