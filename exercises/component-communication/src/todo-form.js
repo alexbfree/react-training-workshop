@@ -5,6 +5,7 @@ var TodoForm = React.createClass({
   handleSubmit: function(e) {
     e.preventDefault();
     TodoActions.addTodo(this.refs.todoInput.value);
+    this.refs.todoInput.value="";
   },
 
   render: function() {
