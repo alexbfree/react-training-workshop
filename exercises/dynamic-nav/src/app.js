@@ -26,11 +26,16 @@ var App = React.createClass({
   }
 });
 
+var NotFound = function() {
+  return <p>404!!!</p>;
+};
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/users/:username" component={Users} />
+      <Route path="*" component={NotFound} />
     </Route>
   </Router>,
   document.getElementById('app')

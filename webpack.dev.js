@@ -1,3 +1,4 @@
+var WebpackNotifierPlugin = require('webpack-notifier');
 var fs = require('fs');
 var path = require('path');
 
@@ -50,5 +51,8 @@ module.exports = {
         cacheDirectory: true
       }
     }]
-  }
+  },
+  plugins: [
+    new WebpackNotifierPlugin(),
+  ]
 }

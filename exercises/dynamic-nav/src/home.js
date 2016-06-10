@@ -9,13 +9,12 @@ var Home = React.createClass({
   },
   onTextChange: function(e) {
     // update the state with the new text value
+    this.setState({formValue:e.target.value});
   },
   onSubmit: function(e) {
     e.preventDefault();
-    // get the value of the form, submit it
-    // and pass it to the router to transition to a new route
-    // tip: this.props.router.push!
-    console.log(this.props.router);
+    var user = this.state.formValue;
+    this.props.router.push("/users/" + user);
   },
   render: function() {
     return (
@@ -30,5 +29,7 @@ var Home = React.createClass({
   }
 });
 
-module.exports = withRouter(Home);
+var homeComponentWithRouter = withRouter(Home);
+
+module.exports = homeComponentWithRouter;
 

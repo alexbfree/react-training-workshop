@@ -8,7 +8,7 @@ var Users = React.createClass({
     this.fetchUser(this.props.params.username);
   },
   fetchUser: function(username) {
-    fetch('https://api.github.com/users/' + username).then(function(data) {
+    fetch('https://github-proxy-api.herokuapp.com/users/' + username).then(function(data) {
       return data.json();
     }).then(function(data) {
       this.setState({ user: data });

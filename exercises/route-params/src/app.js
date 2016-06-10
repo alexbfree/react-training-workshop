@@ -15,7 +15,7 @@ var App = React.createClass({
     return (
       <div>
         <ul>
-          <li><Link activeClassName="active" to="/">Home</Link></li>
+          <li><IndexLink activeClassName="active" to="/">Home</IndexLink></li>
           <li><Link activeClassName="active" to="/users/jackfranklin">About Jack</Link></li>
           <li><Link activeClassName="active" to="/users/alexbfree">About Alex</Link></li>
         </ul>
