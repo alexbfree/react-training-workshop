@@ -17,7 +17,7 @@ var App = React.createClass({
         <ul>
           <li><Link activeClassName="active" to="/">Home</Link></li>
           <li><Link activeClassName="active" to="/users/jackfranklin">About Jack</Link></li>
-          <li><Link activeClassName="active" to="/users/leggetter">About Phil</Link></li>
+          <li><Link activeClassName="active" to="/users/alexbfree">About Alex</Link></li>
         </ul>
         { this.props.children }
       </div>

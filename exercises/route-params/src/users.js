@@ -7,8 +7,13 @@ var Users = React.createClass({
   componentWillMount: function() {
     this.fetchUser(this.props.params.username);
   },
+  componentWillReceiveProps: function(newProps) {
+    if (newProps.params.username != this.props.params.username) {
+      this.fetchUser(newProps.params.username);
+    }
+  },
   fetchUser: function(username) {
-    fetch('https://api.github.com/users/' + username).then(function(data) {
+    fetch('https://github-proxy-api.herokuapp.com/users/' + username).then(function(data) {
       return data.json();
     }).then(function(data) {
       this.setState({ user: data });

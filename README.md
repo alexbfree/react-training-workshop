@@ -31,6 +31,24 @@ There's a load of notes in `lessons/` that map to exercises. The order they shou
 - lessons/testing-react-lessons.md
 - lessons/final-lessons.md
 
+### Links from the Workshops
+
+- https://facebook.github.io/react/docs/reusable-components.html#prop-validation
+- http://interactive-react.herokuapp.com/
+- https://facebook.github.io/react/docs/more-about-refs.html
+- https://facebook.github.io/react/docs/component-specs.html
+- https://facebook.github.io/react-native/docs/network.html#fetch
+- https://www.npmjs.com/package/webpack-notifier
+- https://github.com/jackfranklin/react-webpack-boilerplate
+- https://github.com/reactjs/react-router
+- https://github.com/reactjs/react-router/blob/master/docs/API.md#link
+- https://github.com/reactjs/react-router/blob/master/docs/guides/IndexRoutes.md
+- https://github.com/orktes/atom-react
+- https://github.com/jeremyramin/terminal-plus
+- https://github.com/reactjs/react-router/blob/master/docs/guides/ComponentLifecycle.md
+- https://packagecontrol.io/packages/Babel
+- https://github-proxy-api.herokuapp.com/
+
 
 ### Credits
 
